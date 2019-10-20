@@ -6,6 +6,7 @@ import androidx.fragment.app.FragmentManager;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.u3_b_a16diegoar.fragments.CheckboxDfrag;
 import com.example.u3_b_a16diegoar.fragments.ListaSelectDfrag;
 import com.example.u3_b_a16diegoar.fragments.MsgDfrag;
 import com.example.u3_b_a16diegoar.fragments.RadioButtonsDfrag;
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showCheckboxDfrag(View v) {
-
+        (new CheckboxDfrag()).show(fm, TAG);
     }
 
     public void showTxtinDfrag(View v) {

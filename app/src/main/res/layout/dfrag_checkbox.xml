@@ -1,30 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="20dp">
 
     <CheckBox
         android:id="@+id/chkCoche"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Coche"/>
+        android:text="Coche"
+        android:tag="chkTrans"/>
 
     <CheckBox
         android:id="@+id/chkMoto"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Moto" />
+        android:text="Moto"
+        android:checked="true"
+        android:tag="chkTrans"/>
 
     <CheckBox
         android:id="@+id/chkBici"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Bici" />
+        android:text="Bici"
+        android:tag="chkTrans"/>
 
     <CheckBox
         android:id="@+id/chkMetro"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Metro" />
+        android:text="Metro"
+        android:checked="true"
+        android:tag="chkTrans"/>
+
+    <CheckBox
+        android:id="@+id/chkTren"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tren"
+        android:tag="chkTrans"/>
+
+    <CheckBox
+        android:id="@+id/chkAutobus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Autobús"
+        android:tag="chkTrans"/>
+
+    <CheckBox
+        android:id="@+id/chkAndando"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Andando"
+        android:tag="chkTrans"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/btnCancelTransporte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"/>
+
+        <Button
+            android:id="@+id/btnAceptTransporte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aceptar"/>
+    </LinearLayout>
 
 </LinearLayout>
