@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="opcions">
+        <item>Opción un</item>
+        <item>Opción dous</item>
+        <item>Opción tres</item>
+        <item>Opción catro</item>
+    </string-array>
+</resources>

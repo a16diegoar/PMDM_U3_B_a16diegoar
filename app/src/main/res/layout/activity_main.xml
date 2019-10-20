@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preme nos botóns." />
+
+    <Button
+        android:id="@+id/btnMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ventá de dialogo con mensaxe" />
+
+    <Button
+        android:id="@+id/btnTresBots"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ventá de dialogo con 3 botóns" />
+
+    <Button
+        android:id="@+id/btnListaSelec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dialogo con lista de seleccion" />
+
+    <Button
+        android:id="@+id/btnRadioButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ventá cunha selección" />
+
+    <Button
+        android:id="@+id/btnCheckBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ventá con selección multiple" />
+
+    <Button
+        android:id="@+id/btnEntradaTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ventá con entrada de texto" />
+
+</LinearLayout>
