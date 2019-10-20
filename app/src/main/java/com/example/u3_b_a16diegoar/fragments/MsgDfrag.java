@@ -11,7 +11,7 @@ import androidx.fragment.app.DialogFragment;
 
 import com.example.u3_b_a16diegoar.R;
 
-public class MsgDFrag extends DialogFragment {
+public class MsgDfrag extends DialogFragment {
 
     @Nullable
     @Override

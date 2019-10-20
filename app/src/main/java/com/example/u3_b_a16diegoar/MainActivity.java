@@ -7,7 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.u3_b_a16diegoar.fragments.ListaSelectDfrag;
-import com.example.u3_b_a16diegoar.fragments.MsgDFrag;
+import com.example.u3_b_a16diegoar.fragments.MsgDfrag;
 import com.example.u3_b_a16diegoar.fragments.RadioButtonsDfrag;
 import com.example.u3_b_a16diegoar.fragments.TresBotsDfrag;
 
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showMsgDfrag(View v) {
-        (new MsgDFrag()).show(fm, TAG);
+        (new MsgDfrag()).show(fm, TAG);
     }
 
     public void showTresBotsDfrag(View v) {
