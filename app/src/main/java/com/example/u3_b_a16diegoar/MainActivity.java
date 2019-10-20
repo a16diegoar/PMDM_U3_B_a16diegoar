@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.example.u3_b_a16diegoar.fragments.ListaSelectDfrag;
 import com.example.u3_b_a16diegoar.fragments.MsgDFrag;
+import com.example.u3_b_a16diegoar.fragments.RadioButtonsDfrag;
 import com.example.u3_b_a16diegoar.fragments.TresBotsDfrag;
 
 public class MainActivity extends AppCompatActivity {
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showRadioButtonsDfrag(View v) {
-
+        (new RadioButtonsDfrag()).show(fm, TAG);
     }
 
     public void showCheckboxDfrag(View v) {

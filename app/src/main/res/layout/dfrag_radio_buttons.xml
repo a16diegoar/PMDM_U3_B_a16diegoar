@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="20dp">
 
     <RadioGroup
         android:id="@+id/rgPrincipal"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <RadioButton
             android:id="@+id/rbIphone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="iPhone"/>
+            android:text="iPhone"
+            />
 
         <RadioButton
             android:id="@+id/rbBackberry"
@@ -27,5 +29,25 @@
             android:text="Android" />
 
     </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/btnCancelSmartphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"/>
+
+        <Button
+            android:id="@+id/btnAceptSmartphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aceptar"/>
+
+    </LinearLayout>
 
 </LinearLayout>
