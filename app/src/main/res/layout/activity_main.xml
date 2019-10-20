@@ -16,36 +16,42 @@
         android:id="@+id/btnMsg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ventá de dialogo con mensaxe" />
+        android:text="Ventá de dialogo con mensaxe"
+        android:onClick="showMsgDfrag"/>
 
     <Button
         android:id="@+id/btnTresBots"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ventá de dialogo con 3 botóns" />
+        android:text="Ventá de dialogo con 3 botóns"
+        android:onClick="showTresBotsDfrag"/>
 
     <Button
         android:id="@+id/btnListaSelec"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dialogo con lista de seleccion" />
+        android:text="Dialogo con lista de seleccion"
+        android:onClick="showListaSelectDfrag"/>
 
     <Button
         android:id="@+id/btnRadioButtons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ventá cunha selección" />
+        android:text="Ventá cunha selección"
+        android:onClick="showRadioButtonsDfrag"/>
 
     <Button
         android:id="@+id/btnCheckBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ventá con selección multiple" />
+        android:text="Ventá con selección multiple"
+        android:onClick="showCheckboxDfrag"/>
 
     <Button
         android:id="@+id/btnEntradaTexto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ventá con entrada de texto" />
+        android:text="Ventá con entrada de texto"
+        android:onClick="showTxtinDfrag"/>
 
 </LinearLayout>
