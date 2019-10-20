@@ -1,16 +1,17 @@
 package com.example.u3_b_a16diegoar;
 
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.FragmentManager;
-
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.FragmentManager;
 
 import com.example.u3_b_a16diegoar.fragments.CheckboxDfrag;
 import com.example.u3_b_a16diegoar.fragments.ListaSelectDfrag;
 import com.example.u3_b_a16diegoar.fragments.MsgDfrag;
 import com.example.u3_b_a16diegoar.fragments.RadioButtonsDfrag;
 import com.example.u3_b_a16diegoar.fragments.TresBotsDfrag;
+import com.example.u3_b_a16diegoar.fragments.TxtinDfrag;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -46,6 +47,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showTxtinDfrag(View v) {
-
+        (new TxtinDfrag()).show(fm, TAG);
     }
 }

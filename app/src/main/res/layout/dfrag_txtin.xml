@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:padding="20dp">
 
     <TextView
         android:id="@+id/tvNom"
@@ -31,16 +32,18 @@
         android:layout_below="@id/tvPasswd"/>
 
     <Button
-        android:id="@+id/btnCancel"
+        android:id="@+id/btnCancelInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/txePasswd" />
+        android:layout_below="@id/txePasswd"
+        android:text="Cancelar"/>
 
     <Button
-        android:id="@+id/btnAcept"
+        android:id="@+id/btnAceptInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txePasswd"
-        android:layout_toRightOf="@id/btnCancel" />
+        android:layout_toRightOf="@id/btnCancelInput"
+        android:text="Aceptar"/>
 
 </RelativeLayout>
