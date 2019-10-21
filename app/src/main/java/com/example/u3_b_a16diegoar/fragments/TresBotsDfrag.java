@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,10 +15,12 @@ import com.example.u3_b_a16diegoar.R;
 
 public class TresBotsDfrag extends DialogFragment {
 
+    View rootView;
+
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        final View rootView = inflater.inflate(R.layout.dfrag_tres_bots, container, false);
+        rootView = inflater.inflate(R.layout.dfrag_tres_bots, container, false);
         getDialog().setTitle("Enquisa");
 
         Button btnSi = rootView.findViewById(R.id.btnSi);
@@ -48,6 +51,10 @@ public class TresBotsDfrag extends DialogFragment {
     }
 
     public void respuesta(View v) {
+        String txt = "A tua resposta é: ";
+        Button btn = (Button) v;
+        txt += btn.getText().toString();
+        Toast.makeText(getContext(), txt, Toast.LENGTH_SHORT).show();
         dismiss();
     }
 }
