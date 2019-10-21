@@ -53,7 +53,6 @@ public class RadioButtonsDfrag extends DialogFragment {
         btnCan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                guardado = false;
                 dismiss();
             }
         });
