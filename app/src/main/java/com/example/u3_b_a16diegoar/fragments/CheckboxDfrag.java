@@ -18,7 +18,10 @@ import java.util.ArrayList;
 
 public class CheckboxDfrag extends DialogFragment {
 
+    private static boolean[] valores = new boolean[] { false, true, false, true, false, false, false };
+
     View rootView;
+    ArrayList<CheckBox> cajas;
 
     @Nullable
     @Override
@@ -26,10 +29,30 @@ public class CheckboxDfrag extends DialogFragment {
         rootView = inflater.inflate(R.layout.dfrag_checkbox, container, false);
         getDialog().setTitle("Selecciona modos de transporte");
 
+        cajas = new ArrayList<>();
+        cajas.add((CheckBox) rootView.findViewById(R.id.chkCoche));
+        cajas.add((CheckBox) rootView.findViewById(R.id.chkMoto));
+        cajas.add((CheckBox) rootView.findViewById(R.id.chkBici));
+        cajas.add((CheckBox) rootView.findViewById(R.id.chkMetro));
+        cajas.add((CheckBox) rootView.findViewById(R.id.chkTren));
+        cajas.add((CheckBox) rootView.findViewById(R.id.chkAutobus));
+        cajas.add((CheckBox) rootView.findViewById(R.id.chkAndando));
+
+        //cargar valores
+        for (int i = 0; i < cajas.size(); i++) {
+            cajas.get(i).setChecked(valores[i]);
+        }
+
         Button btnAc = rootView.findViewById(R.id.btnAceptTransporte);
         btnAc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //guardar valores
+                for (int i = 0; i < cajas.size(); i++) {
+                    CheckBox caja = cajas.get(i);
+                    valores[i] = caja.isChecked();
+                }
+
                 showSeleccion();
                 dismiss();
             }
@@ -47,15 +70,6 @@ public class CheckboxDfrag extends DialogFragment {
     }
 
     private void showSeleccion() {
-        ArrayList<CheckBox> cajas = new ArrayList<>();
-        cajas.add((CheckBox) rootView.findViewById(R.id.chkCoche));
-        cajas.add((CheckBox) rootView.findViewById(R.id.chkMoto));
-        cajas.add((CheckBox) rootView.findViewById(R.id.chkBici));
-        cajas.add((CheckBox) rootView.findViewById(R.id.chkMetro));
-        cajas.add((CheckBox) rootView.findViewById(R.id.chkTren));
-        cajas.add((CheckBox) rootView.findViewById(R.id.chkAutobus));
-        cajas.add((CheckBox) rootView.findViewById(R.id.chkAndando));
-
         String txt = "";
         for (CheckBox c : cajas) {
             if (c.isChecked()) {
